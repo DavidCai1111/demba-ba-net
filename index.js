@@ -32,7 +32,7 @@ application
 
       const result = await model.predict(activation)
 
-      console.log({ possibility: `${Number(result.dataSync()) * 100}%` })
+      console.log({ possibility: `${(Number(result.dataSync()) * 100).toFixed(2)}%` })
     })(console.error)
   })
 
