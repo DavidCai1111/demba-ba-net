@@ -2,18 +2,18 @@
 require('@tensorflow/tfjs-node')
 const tf = require('@tensorflow/tfjs')
 const image = require('./lib/image')
-const { loadMobileNet, dembaBaNetModel } = require('./lib/model')
+const { loadMobileNet } = require('./lib/model')
 
 ;(async function () {
   const mobileNet = await loadMobileNet()
-  const img = await image.loadImage('../images/demba ba/demba-ba-65.jpg')
+  const model = await tf.loadModel(`file://${__dirname}/demba-ba-net/model.json`)
+  const img = await image.loadImage('../images/demba ba/11. neymar.jpg')
 
-  const model = dembaBaNetModel
+  const activation = mobileNet.predict(img)
 
-  const optimizer = tf.train.adam(0.0001)
-  model.compile({ optimizer, loss: 'categoricalCrossentropy' })
+  console.log(activation)
 
-  const result = await mobileNet.predict(img)
+  const result = await model.predict(activation)
 
-  console.log(result)
+  console.log(result.dataSync())
 })(console.error)
