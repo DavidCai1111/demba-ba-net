@@ -25,3 +25,10 @@ Demba-Ba-Net is a CNN to check whether a given image contains the [ShangHai Shen
 // output:
 // { possibility: '1.64%' }
 ```
+
+![example4.jpg](//dn-cnode.qbox.me/FiFnOaCNKhWLadg3QAw9A9kKCDXF)
+
+```js
+// output:
+// { possibility: '30.27%' }
+```

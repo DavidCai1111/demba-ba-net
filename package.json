@@ -6,6 +6,9 @@
   "scripts": {
     "test": "./node_modules/.bin/standard"
   },
+  "bin": {
+    "demba-ba-net-js": "./bin/demba-ba-net-js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DavidCai1993/demba-ba-net.git"
