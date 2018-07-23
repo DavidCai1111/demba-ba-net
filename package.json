@@ -1,0 +1,26 @@
+{
+  "name": "demba-ba-net",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidCai1993/demba-ba-net.git"
+  },
+  "author": "DavidCai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidCai1993/demba-ba-net/issues"
+  },
+  "homepage": "https://github.com/DavidCai1993/demba-ba-net#readme",
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^0.2.2",
+    "@tensorflow/tfjs": "^0.12.3",
+    "@tensorflow/tfjs-node": "^0.1.9",
+    "@tensorflow/tfjs-node-gpu": "^0.1.9",
+    "jimp": "^0.2.28"
+  }
+}
