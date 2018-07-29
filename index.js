@@ -1,5 +1,4 @@
 'use strict'
-require('@tensorflow/tfjs-node')
 const application = require('commander')
 const pkg = require('./package')
 
