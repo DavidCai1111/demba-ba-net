@@ -1,6 +1,6 @@
 {
   "name": "demba-ba-net",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Demba-Ba-Net is a CNN to check Whether a given image contains the ShangHai ShenHua FC Football Star Demba Ba",
   "main": "index.js",
   "scripts": {
